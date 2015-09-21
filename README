@@ -1,0 +1,27 @@
+CS148 Summer 2014 Final Project
+README file
+Name: Tsao-Wei (Brad) Huang
+
+Source Code included:
+	Three pairs of shaders: furDemo, tigerFur and furKKShading. Each pair can be used together to 
+		create the shading effect described in each file.
+	main.cpp: blocks of the code are borrowed from HW4, while others have been separated out. The 
+		drawing fur onto meshes part does not work well..
+
+The program fur generated can be invoked by
+./fur mesh_filename vertex_shader fragment_shader
+
+If the fur program is made to draw a tile of fur, the mesh filename does not make any difference:
+the program is just going to draw a tile of fur facing directly at the camera. Some user controls
+should be used to orient the tile to reach fur-like viewing angles. The controls are:
+
+	'l': increase the fur length
+	'k': decrease the fur length
+	'm': increase fur density
+	'n': decrease fur density
+	't': make fur thinner by sampling on a larger fur texture. Also increases fur density
+	'y': opposite to 't'
+	'-': scale down the objects
+	'='/'+': scale up the objects
+	Arrow keys: rotations
+	Mouse: translations

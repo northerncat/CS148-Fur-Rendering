@@ -1,0 +1,1 @@
+Please note: the capsule mesh contains per vertex normals. The Spock mesh does not contain normals; you will have to compute them, per face, using the method described in HW4.
